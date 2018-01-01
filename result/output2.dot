@@ -1,0 +1,12 @@
+digraph G{
+	50 -> 42 [label=left];
+	42 -> 30 [label=left];
+	30 -> 12 [label=left];
+	12 -> 3 [label=left];
+	42 -> 47 [label=right];
+	50 -> 68 [label=right];
+	68 -> 67 [label=left];
+	67 -> 65 [label=left];
+	68 -> 100 [label=right];
+	100 -> 75 [label=left];
+}

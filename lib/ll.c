@@ -60,7 +60,7 @@ void free_vll(vll *header){
         free(del);
         count++;
     }
-    printf("Successfully free. Remove %d elements (include header).",count);
+    printf("Successfully free. Remove %d elements (include header).\n\n",count);
 }
 
 // length

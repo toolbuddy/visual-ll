@@ -1,3 +1,5 @@
+#ifndef LL 
+#define LL 
 /*
     Implementation of visualization linked-list
 */
@@ -39,3 +41,5 @@ void print(vll *header);
 
 // print with visualization support (output an graphviz dot files)
 void print_gv(vll *header, FILE *fp);
+
+#endif

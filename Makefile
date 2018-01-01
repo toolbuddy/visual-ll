@@ -1,7 +1,8 @@
 EXEC:=main
-OBJS:=main.o lib/ll.o 
+OBJS:=main.o lib/ll.o lib/ll_tree.o
 OBJDIR=result
 GV=result/output.dot
+GV2=result/output2.dot
 CXX=gcc
 CFLAGS= -std=c11
 CFLAGS_g=-g -std=c11
@@ -16,8 +17,9 @@ $(OBJDIR):
 	mkdir -p $@
 
 plot: all $(OBJDIR)
-	./$(EXEC) $(GV)
+	./$(EXEC) $(GV) $(GV2)
 	dot -Grankdir=LR -Tpng $(GV) -o result/graph.png
+	dot -Tpng $(GV2) -o result/graph2.png
 
 clean: 
 	rm $(OBJS) $(EXEC) 

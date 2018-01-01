@@ -30,3 +30,5 @@ make plot
 # Example
 * Demo - visualizable linked-list
 ![](./result/graph.png)
+* Demo - binary tree 
+![](./result/graph2.png)
