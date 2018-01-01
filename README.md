@@ -14,6 +14,8 @@ sudo apt install graphviz
     * `gcc`: v5.4.1
     * `GNU make`: v4.1
     * `gdb`: v7.11.1
+* Memory error detector
+    * `valgrind`: v3.11.0
 
 # Run
 * build
@@ -25,6 +27,11 @@ make
     * check out the result in `result/graph.png`
 ```
 make plot
+```
+
+* run with memcheck
+```
+make valgrind
 ```
 
 # Example

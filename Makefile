@@ -13,6 +13,9 @@ all: $(OBJS) lib/vll.h
 gdb: $(OBJS)
 	$(CXX) $^ -o $(EXEC) $(CFLAGS_g)
 
+valgrind: all $(OBJDIR)
+	valgrind --leak-check=full --show-leak-kinds=all -v ./$(EXEC) $(GV) $(GV2)
+
 $(OBJDIR):
 	mkdir -p $@
 

@@ -39,7 +39,7 @@ int main(int argc,char *argv[]){
         vll_tree *newone=create_vll_tree();
         newone->type=(rand()%100)+1;
         newone->sort=(float)(newone->type);
-        printf("%d\t",newone->type);
+        //printf("%d\t",newone->type);
         push_vll_tree(binary_tree,newone);
     }
     printf("Total binary tree size: %d\n",length_vll_tree(binary_tree));
@@ -55,6 +55,7 @@ int main(int argc,char *argv[]){
     print_vll_tree(binary_tree,fp2);
 
     // clean
+    free_vll_tree(binary_tree);
     free_vll(header);
     return 0;
 }

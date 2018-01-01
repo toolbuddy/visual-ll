@@ -1,12 +1,11 @@
 digraph G{
-	50 -> 42 [label=left];
-	42 -> 30 [label=left];
-	30 -> 12 [label=left];
-	12 -> 3 [label=left];
-	42 -> 47 [label=right];
-	50 -> 68 [label=right];
-	68 -> 67 [label=left];
-	67 -> 65 [label=left];
-	68 -> 100 [label=right];
-	100 -> 75 [label=left];
+	50 -> 26 [label=left];
+	26 -> 22 [label=left];
+	26 -> 40 [label=right];
+	40 -> 49 [label=right];
+	50 -> 88 [label=right];
+	88 -> 56 [label=left];
+	56 -> 62 [label=right];
+	62 -> 58 [label=left];
+	62 -> 76 [label=right];
 }

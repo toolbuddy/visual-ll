@@ -59,7 +59,17 @@ vll_tree *pop_vll_tree_smallest(vll_tree *header){
 
 // free header
 void free_vll_tree(vll_tree *header){
-
+    if(header->left!=NULL){
+        free_vll_tree(header->left);
+    }
+    if(header->right!=NULL){
+        free_vll_tree(header->right);
+    }
+    header->left=NULL;
+    header->right=NULL;
+    header->parent=NULL;
+    free(header);
+    return;
 }
 
 // length, get total size of entire tree
