@@ -1,5 +1,6 @@
 #include "lib/ll.h"
 #include "lib/ll_tree.h"
+#include "lib/ll_graph.h"
 #include <time.h>
 
 vll *header;
@@ -54,7 +55,21 @@ int main(int argc,char *argv[]){
     }
     print_vll_tree(binary_tree,fp2);
 
+    // DEMO 4: graph
+    vll_graph *graph=init_graph();
+    FILE *fp3;
+    // check 
+    if(argc<4){
+        printf("[Error] Need to give the output file for 'vll_graph' graphviz.\n");
+        exit(1);
+    }
+    else{
+        fp3=fopen(argv[3],"w+");
+    }
+    // plot 
+    print_gv_vll_graph(graph,fp3);
     // clean
+    free_vll_graph(graph);
     free_vll_tree(binary_tree);
     free_vll(header);
     return 0;

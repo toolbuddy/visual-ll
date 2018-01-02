@@ -42,3 +42,7 @@ make valgrind
 * Demo - binary tree 
 
 ![](./result/graph2.png)
+
+* Demo - directed graph
+
+![](./result/graph3.png)
