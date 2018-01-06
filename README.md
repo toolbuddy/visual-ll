@@ -1,6 +1,10 @@
 # visual-ll
 Using graphviz to enable visualization on linked-list implementation.
 
+* If you want to take advantage of this project, please clone/fork it, and then modify the code in `lib/` for your own use.
+* And example for each demo, you can see the code under `src/`.
+* If you like it, please give `visual-ll` a star ~!
+
 # Author
 * [Kevin Cyu](https://github.com/kevinbird61)
 
