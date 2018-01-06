@@ -22,7 +22,7 @@ sudo apt install graphviz
 ## demo part
 * run all demo (build + run + plot)
 ```sh
-make
+make all
 ```
 * run each 
 ```sh

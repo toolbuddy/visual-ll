@@ -61,4 +61,4 @@ $(OBJDIR):
 
 clean: 
 	rm $(OBJS) $(EXEC) $(DEMO1) $(DEMO2) $(DEMO3)
-	rm -rf $(OBJDIR)
+	# rm -rf $(OBJDIR)
