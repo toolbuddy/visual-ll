@@ -18,20 +18,47 @@ sudo apt install graphviz
     * `valgrind`: v3.11.0
 
 # Run
-* build
-```
+
+## demo part
+* run all demo (build + run + plot)
+```sh
 make
 ```
+* run each 
+```sh
+# demo 1
+make demo_r
+# demo 2
+make demo2_r
+# demo 3
+make demo3_r
+```
 
-* run example and plot the visualization linked list
-    * check out the result in `result/graph.png`
-```
-make plot
+## debug (by gdb)
+* run each
+```sh
+# demo 1
+make gdb1
+# demo 2
+make gdb2
+# demo 3
+make gdb3
 ```
 
-* run with memcheck
+## memory check (by valgrind)
+* run each
+```sh
+# demo 1
+make memcheck1
+# demo 2
+make memcheck2
+# demo 3
+make memcheck3
 ```
-make valgrind
+
+## clean all existed object files
+```sh
+make clean
 ```
 
 # Example
